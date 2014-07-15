@@ -230,6 +230,15 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_ErpLayoutPage.cshtml" />
     <Content Include="Views\ErpHome\Index.cshtml" />
+    <Content Include="Views\ErpHome\_HeaderOnePartial.cshtml" />
+    <Content Include="Views\ErpHome\_HeaderTwoPartial.cshtml" />
+    <Content Include="Views\ErpHome\_BarnnerOnePartial.cshtml" />
+    <Content Include="Views\ErpHome\_BarnnerTwoPartial.cshtml" />
+    <Content Include="Views\ErpHome\_BarnnerThreePartial.cshtml" />
+    <Content Include="Views\ErpHome\_ToolbarPartial.cshtml" />
+    <Content Include="Views\ErpHome\_NaviPartial.cshtml" />
+    <Content Include="Views\ErpHome\_FotterOnePartial.cshtml" />
+    <Content Include="Views\ErpHome\_FotterTwoPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

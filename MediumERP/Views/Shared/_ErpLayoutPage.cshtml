@@ -2,12 +2,54 @@
 
 <html>
 <head>
-    <meta name="viewport" content="width=device-width" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 </head>
-<body>
-    <div data-role="page">
+<body><i class="icon-align-left"></i>
+    <div id="barnner_one">
+        <!--Barnner广告-->
+        @Html.Partial("_BarnnerOnePartial")
+    </div>
+    <div id="header_one">
+        <!--头部1 文字功能-->
+        @Html.Partial("_HeaderOnePartial")
+    </div>
+    <div id="barnner_two">
+        <!--Barnner广告-->
+        @Html.Partial("_BarnnerTwoPartial")
+    </div>
+    <div id="header_two">
+        <!--头部2 LOGO等-->
+        @Html.Partial("_HeaderTwoPartial")
+    </div>
+    <div id="barnner_three">
+        <!--Barnner广告-->
+        @Html.Partial("_BarnnerThreePartial")
+    </div>
+    <div id="toolbar">
+        <!--工具栏栏-->
+        @Html.Partial("_ToolbarPartial")
+    </div>
+    <div id="navi">
+        <!--导航栏-->
+        @Html.Partial("_NaviPartial")
+    </div>
+    <div id="body">
+        <!--正文部分-->
         @RenderBody()
+    </div>
+    <div id="footer_one">
+        <!--脚部1-->
+        @Html.Partial("_FotterOnePartial")
+    </div>
+    <div id="footer_two">
+        <!--脚部2-->
+        @Html.Partial("_FotterTwoPartial")
     </div>
 </body>
 </html>
