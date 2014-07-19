@@ -1,55 +1,64 @@
 ﻿<!DOCTYPE html>
 
-<html>
+<html lang="zh-cn">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
 </head>
-<body><i class="icon-align-left"></i>
-    <div id="barnner_one">
-        <!--Barnner广告-->
-        @Html.Partial("_BarnnerOnePartial")
-    </div>
-    <div id="header_one">
-        <!--头部1 文字功能-->
-        @Html.Partial("_HeaderOnePartial")
-    </div>
-    <div id="barnner_two">
-        <!--Barnner广告-->
-        @Html.Partial("_BarnnerTwoPartial")
-    </div>
-    <div id="header_two">
-        <!--头部2 LOGO等-->
-        @Html.Partial("_HeaderTwoPartial")
-    </div>
-    <div id="barnner_three">
-        <!--Barnner广告-->
-        @Html.Partial("_BarnnerThreePartial")
-    </div>
-    <div id="toolbar">
-        <!--工具栏栏-->
-        @Html.Partial("_ToolbarPartial")
-    </div>
-    <div id="navi">
-        <!--导航栏-->
-        @Html.Partial("_NaviPartial")
-    </div>
-    <div id="body">
-        <!--正文部分-->
-        @RenderBody()
-    </div>
-    <div id="footer_one">
-        <!--脚部1-->
-        @Html.Partial("_FotterOnePartial")
-    </div>
-    <div id="footer_two">
-        <!--脚部2-->
-        @Html.Partial("_FotterTwoPartial")
+<body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+
+    <div class="container-fluid">
+        <div id="barnner_one" class="container-fluid">
+            <!--Barnner广告-->
+            @Html.Partial("_BarnnerOnePartial")
+        </div>
+        <div id="header_one" class="container-fluid">
+            <!--头部1 页头文字功能-->
+            @Html.Partial("_HeaderOnePartial")
+        </div>
+        <div id="barnner_two" class="container-fluid">
+            <!--Barnner广告-->
+            @Html.Partial("_BarnnerTwoPartial")
+            
+        </div>
+        <div id="header_two" class="container-fluid">
+            <!--头部2 LOGO等-->
+            @Html.Partial("_HeaderTwoPartial")
+        </div>
+        <div id="barnner_three" class="container-fluid">
+            <!--Barnner广告（巨幕）-->
+            @Html.Partial("_BarnnerThreePartial")
+        </div>
+        <div id="toolbar" class="container-fluid">
+            <!--工具栏栏-->
+            @Html.Partial("_ToolbarPartial")
+        </div>
+        <div id="navi" class="container-fluid">
+            <!--导航栏-->
+            @Html.Partial("_NaviPartial")
+        </div>
+        <div id="body" class="container-fluid">
+            <!--正文部分-->
+            @RenderBody()
+        </div>
+        <div id="footer_one" class="container-fluid">
+            <!--脚部1-->Default1
+            @Html.Partial("_FotterOnePartial")
+        </div>
+        <div id="footer_two" class="container-fluid">
+            <!--脚部2-->
+            @Html.Partial("_FotterTwoPartial")
+        </div>
     </div>
 </body>
 </html>

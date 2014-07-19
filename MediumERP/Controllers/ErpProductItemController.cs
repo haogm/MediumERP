@@ -7,41 +7,35 @@ using MediumERP.Models;
 
 namespace MediumERP.Controllers
 {
-    public class ErpHomeController : Controller
+    public class ErpProductItemController : Controller
     {
         //
-        // GET: /ErpHome/
+        // GET: /ErpProductItem/
         public ActionResult Index()
         {
-            ProductItem product = new ProductItem { ProductID="7000-6788", ProductName="复印纸 A4 70g" };
-            List<ProductItem> productList = new List<ProductItem>();
-            productList.Add(product);
-
-            SuggestedBigCategoryItems suggestedBigCategoryItems = new SuggestedBigCategoryItems();
-            suggestedBigCategoryItems.bigCategory = new BigCategory { BigCategoryID="20", BigCategoryName="复印纸" };
-            suggestedBigCategoryItems.suggestedProducts = productList;
-
-            HomepageModel homepage = new HomepageModel();
-            homepage.suggestedBigCategoryItems = suggestedBigCategoryItems;
-            return View(homepage);
+            ProductItem product = new ProductItem{
+                ProductID = "7000-6788"
+            };
+            ViewBag.mymessage = "动态生成的消息"; ;
+            return View(product);
         }
 
         //
-        // GET: /ErpHome/Details/5
+        // GET: /ErpProductItem/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
         //
-        // GET: /ErpHome/Create
+        // GET: /ErpProductItem/Create
         public ActionResult Create()
         {
             return View();
         }
 
         //
-        // POST: /ErpHome/Create
+        // POST: /ErpProductItem/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -58,14 +52,14 @@ namespace MediumERP.Controllers
         }
 
         //
-        // GET: /ErpHome/Edit/5
+        // GET: /ErpProductItem/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
         //
-        // POST: /ErpHome/Edit/5
+        // POST: /ErpProductItem/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -82,14 +76,14 @@ namespace MediumERP.Controllers
         }
 
         //
-        // GET: /ErpHome/Delete/5
+        // GET: /ErpProductItem/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
         //
-        // POST: /ErpHome/Delete/5
+        // POST: /ErpProductItem/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

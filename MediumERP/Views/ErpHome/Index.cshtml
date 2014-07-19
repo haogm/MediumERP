@@ -1,10 +1,21 @@
-﻿@{
+﻿@model MediumERP.Models.HomepageModel
+@{
     Layout = "~/Views/Shared/_ErpLayoutPage.cshtml";
 }
 @{
     ViewBag.Title = "首页";
 }
+<div class="row">
+    <div class="col-xs-6 col-md-3">
+        <a href="#" class="thumbnail">
+            <img data-src="http://v3.bootcss.com/components/#" alt="...">
+        </a>
+    </div>
+    ...
+</div>
 <div>
-    <p>我的第一个ERP页面</p>
+    分类：@Model.suggestedBigCategoryItems.bigCategory.BigCategoryID &nbsp;&nbsp; @Model.suggestedBigCategoryItems.bigCategory.BigCategoryName
+    <br />
+    产品：@Model.suggestedBigCategoryItems.suggestedProducts[0].ProductID &nbsp;&nbsp; @Model.suggestedBigCategoryItems.suggestedProducts[0].ProductName
 </div>
 

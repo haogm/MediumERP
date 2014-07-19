@@ -173,12 +173,15 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ErpHomeController.cs" />
+    <Compile Include="Controllers\ErpProductItemController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Homepage.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\ProductItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -230,15 +233,16 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_ErpLayoutPage.cshtml" />
     <Content Include="Views\ErpHome\Index.cshtml" />
-    <Content Include="Views\ErpHome\_HeaderOnePartial.cshtml" />
-    <Content Include="Views\ErpHome\_HeaderTwoPartial.cshtml" />
-    <Content Include="Views\ErpHome\_BarnnerOnePartial.cshtml" />
-    <Content Include="Views\ErpHome\_BarnnerTwoPartial.cshtml" />
-    <Content Include="Views\ErpHome\_BarnnerThreePartial.cshtml" />
-    <Content Include="Views\ErpHome\_ToolbarPartial.cshtml" />
-    <Content Include="Views\ErpHome\_NaviPartial.cshtml" />
-    <Content Include="Views\ErpHome\_FotterOnePartial.cshtml" />
-    <Content Include="Views\ErpHome\_FotterTwoPartial.cshtml" />
+    <Content Include="Views\Shared\_HeaderOnePartial.cshtml" />
+    <Content Include="Views\Shared\_HeaderTwoPartial.cshtml" />
+    <Content Include="Views\Shared\_BarnnerOnePartial.cshtml" />
+    <Content Include="Views\Shared\_BarnnerTwoPartial.cshtml" />
+    <Content Include="Views\Shared\_BarnnerThreePartial.cshtml" />
+    <Content Include="Views\Shared\_ToolbarPartial.cshtml" />
+    <Content Include="Views\Shared\_NaviPartial.cshtml" />
+    <Content Include="Views\Shared\_FotterOnePartial.cshtml" />
+    <Content Include="Views\Shared\_FotterTwoPartial.cshtml" />
+    <Content Include="Views\ErpProductItem\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
