@@ -172,6 +172,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DemoProductItemController.cs" />
     <Compile Include="Controllers\ErpHomeController.cs" />
     <Compile Include="Controllers\ErpProductItemController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -179,6 +180,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\DemoController.cs" />
     <Compile Include="Models\Homepage.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ProductItem.cs" />
@@ -188,10 +190,29 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\sticky-footer-navbar.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="images\aitefu84.jpg" />
+    <Content Include="images\baimao.jpg" />
+    <Content Include="images\danenggaogai.jpg" />
+    <Content Include="images\dfsy-1.jpg" />
+    <Content Include="images\dfsy-2.jpg" />
+    <Content Include="images\dfsy-3.jpg" />
+    <Content Include="images\dfsy-4.jpg" />
+    <Content Include="images\dfsy-main.png" />
+    <Content Include="images\jiaduobao.jpg" />
+    <Content Include="images\miaofu.jpg" />
+    <Content Include="images\middle_moon.jpg" />
+    <Content Include="images\nongfushanquandongfangshuye.jpg" />
+    <Content Include="images\qilingwuhouhongcha.jpg" />
+    <Content Include="images\qingfengchouzhi.jpg" />
+    <Content Include="images\quduoduo.jpg" />
+    <Content Include="images\quechaoyouhuoyinyongshui.jpg" />
+    <Content Include="images\riqingquqi.jpg" />
+    <Content Include="images\zhibei.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
@@ -243,6 +264,9 @@
     <Content Include="Views\Shared\_FotterOnePartial.cshtml" />
     <Content Include="Views\Shared\_FotterTwoPartial.cshtml" />
     <Content Include="Views\ErpProductItem\Index.cshtml" />
+    <Content Include="Views\Shared\_DemoLayout.cshtml" />
+    <Content Include="Views\Demo\Index.cshtml" />
+    <Content Include="Views\DemoProductItem\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
